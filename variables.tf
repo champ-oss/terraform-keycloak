@@ -16,6 +16,12 @@ variable "keycloak_url" {
   type        = string
 }
 
+variable "keycloak_client_id" {
+  description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs#client_id"
+  default     = "admin-cli"
+  type        = string
+}
+
 variable "client_timeout" {
   description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs#client_timeout"
   type        = number
