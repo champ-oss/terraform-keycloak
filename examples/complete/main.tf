@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 4.30.0"
+    }
+  }
+}
+
 provider "aws" {
   region = "us-east-2"
 }
@@ -66,8 +75,8 @@ module "keycloak" {
 }
 
 module "keycloak_provider" {
-  source     = "../../"
-  username   = "admin"
-  password   = module.keycloak.keycloak_admin_password
-  url        = module.keycloak.keycloak_endpoint
+  source   = "../../"
+  username = "admin"
+  password = module.keycloak.keycloak_admin_password
+  url      = module.keycloak.keycloak_endpoint
 }
