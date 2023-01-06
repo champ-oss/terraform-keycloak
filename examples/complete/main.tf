@@ -70,5 +70,4 @@ module "keycloak_provider" {
   username   = "admin"
   password   = module.keycloak.keycloak_admin_password
   url        = module.keycloak.keycloak_endpoint
-  depends_on = [module.keycloak]
 }
