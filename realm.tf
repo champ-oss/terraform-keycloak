@@ -1,5 +1,5 @@
 resource "keycloak_realm" "this" {
-  realm             = "master"
+  realm             = "test"
   enabled           = true
-  display_name      = "master"
+  display_name      = "test"
 }
