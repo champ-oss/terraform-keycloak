@@ -39,3 +39,27 @@ variable "attributes" {
   type        = map(string)
   default     = {}
 }
+
+variable "smtp_host" {
+  description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs/resources/realm#host"
+  type        = string
+  default     = null
+}
+
+variable "email_from" {
+  description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs/resources/realm#from"
+  type        = string
+  default     = null
+}
+
+variable "smtp_username" {
+  description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs/resources/realm#attributes"
+  type        = string
+  default     = null
+}
+
+variable "smtp_password" {
+  description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs/resources/realm#attributes"
+  type        = string
+  default     = null
+}
