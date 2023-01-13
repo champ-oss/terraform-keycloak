@@ -19,11 +19,17 @@ variable "url" {
 variable "realm" {
   description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs#realm"
   type        = string
-  default     = "master"
+  default     = ""
 }
 
 variable "initial_login" {
   description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs#initial_login"
   type        = bool
   default     = false
+}
+
+variable "attributes" {
+  description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs/resources/realm#attributes"
+  type        = map(string)
+  default     = {}
 }

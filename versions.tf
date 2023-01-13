@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     keycloak = {
-      source = "mrparkers/keycloak"
+      source  = "mrparkers/keycloak"
       version = "4.1.0"
     }
   }
@@ -13,5 +13,5 @@ provider "keycloak" {
   client_secret = var.client_secret
   url           = var.url
   initial_login = var.initial_login
-  realm         = var.realm
+  realm         = "master"
 }
