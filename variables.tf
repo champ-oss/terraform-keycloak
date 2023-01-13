@@ -28,6 +28,12 @@ variable "initial_login" {
   default     = false
 }
 
+variable "enabled" {
+  description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs#enabled"
+  type        = bool
+  default     = true
+}
+
 variable "attributes" {
   description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs/resources/realm#attributes"
   type        = map(string)

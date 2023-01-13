@@ -1,6 +1,6 @@
 resource "keycloak_realm" "this" {
   realm               = var.realm
-  enabled             = true
+  enabled             = var.enabled
   display_name        = var.realm
   user_managed_access = false
   attributes          = var.attributes
