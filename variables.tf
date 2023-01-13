@@ -1,0 +1,29 @@
+variable "client_id" {
+  description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs#client_id"
+  type        = string
+  default     = "terraform-client"
+}
+
+variable "client_secret" {
+  description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs#client_secret"
+  type        = string
+  default     = ""
+}
+
+variable "url" {
+  description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs#url"
+  type        = string
+  default     = ""
+}
+
+variable "realm" {
+  description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs#realm"
+  type        = string
+  default     = "master"
+}
+
+variable "initial_login" {
+  description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs#initial_login"
+  type        = bool
+  default     = false
+}
