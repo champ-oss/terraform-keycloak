@@ -46,6 +46,12 @@ variable "smtp_host" {
   default     = null
 }
 
+variable "smtp_port" {
+  description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs/resources/realm#port"
+  type        = number
+  default     = null
+}
+
 variable "email_from" {
   description = "https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs/resources/realm#from"
   type        = string

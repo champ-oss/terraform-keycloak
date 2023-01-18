@@ -13,6 +13,7 @@ resource "keycloak_realm" "this" {
   # smtp attributes
   smtp_server {
     host = var.smtp_host
+    port = var.smtp_port
     from = var.email_from
 
     auth {
